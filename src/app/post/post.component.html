@@ -1,0 +1,9 @@
+<div class="container">
+  <input (keyup.enter)="createPost(title)" #title type="text" class="form-control">
+
+  <ul class="list-group">
+    <li *ngFor="let p of post" class="list-group-item">
+      {{ p.title }}
+    </li>
+  </ul>
+</div>
